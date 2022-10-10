@@ -1,162 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio do Gustavo</title>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>maintence mode enabled</title>
 
     <style>
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #1e0320;
-            color: #ffffff;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        main {
-            height: 100vh;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+      html {
+        display: flex;
+        height: 100%;
+      }
 
-        main h1,
-        h2,
-        h3 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #0e0f0e;
+        color: #ff5c00;
 
-        .maintence {
-            animation: breathing 3s ease-in-out infinite;
-        }
+        gap: 50px;
 
-        .abc {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        margin: auto;
+        text-align: center;
+        max-width: 1200px;
+      }
 
-        .abc span {
-            letter-spacing: .5px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 600;
-        }
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
 
-        .abc div {
-            display: flex;
-            align-items: center;
-        }
+      li {
+        list-style: none;
+      }
 
-        a {
-            color: unset;
-            text-decoration: none;
-            transition: .5s;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        a:hover {
-            color: #8c1897;
-        }
-
-        .cba {
-            display: flex;
-            justify-content: space-between;
-            width: 250px;
-            margin-top: 1cm;
-        }
-
-        .cba div img {
-            margin-right: 5px;
-        }
-
-        .cba div a {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-        }
-
-
-        @keyframes breathing {
-
-            0%,
-            100% {
-                transform: translateY(0%);
-            }
-
-            50% {
-                transform: translateY(-2%);
-            }
-        }
-
-
-
-
-
-
-
-
-        /* Responsive */
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 22px;
-            }
-
-            h2 {
-                font-size: 16px;
-            }
-
-            h3 {
-                font-size: 12px;
-            }
-
-            .maintence {
-                margin: 1cm;
-                width: 220px;
-                height: 220px;
-            }
-
-            .abc span {
-                font-size: 14px;
-            }
-        }
+      a {
+        color: unset;
+        text-decoration: none;
+      }
     </style>
-
-
-</head>
-
-<body>
-    <main>
-        <h1>Ei, alto lá!</h1>
-        <h2>No momento estou programando algo bem legal para colocar aqui.</h2>
-        <h3>Volte novamente em alguns dias para ver o quão incrível ficou.</h3>
-        <img class="maintence" src="assets/images/undraw_maintenance_re_59vn.svg" alt="maintence image" width="420px"
-            height="420px">
-        <div class="abc">
-            <span>Enquanto espera, que tal dar uma olhada em minhas redes sociais?</span>
-            <div class="cba">
-                <div>
-                    <img src="assets/images/linkedin.svg" alt="linkedin icon">
-                    <a href="https://www.linkedin.com/in/gusantoscode">Linkedin</a>
-                </div>
-                <div>
-                    <img src="assets/images/github.svg" alt="github icon">
-                    <a href="https://github.com/gusantoscode/">Github</a>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
-
+  </head>
+  <body>
+    <h1>Maintence Mode: <span style="color: green">ON</span></h1>
+    <h2>
+      Hey, foreigner. You cannot access the site right now. We are in
+      maintenance mode. Come back again in a few hours.
+    </h2>
+  </body>
 </html>
